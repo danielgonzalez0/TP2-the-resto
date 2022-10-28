@@ -86,7 +86,43 @@ header nav .nav-icons {
     flex: 0 0 120px;
   }
 }
-header .img-container {
+header nav .nav-icons li:hover {
+  transform: scale(1.4);
+}
+header .header-container {
+  height: calc(100% - 200px);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 220px;
+  align-items: center;
+  position: relative;
+  text-align: center;
+}
+header .header-container span {
+  font-family: "font-3", sans-serif;
+  font-size: 60px;
+  color: rgb(165, 97, 68);
+  line-height: 40px;
+}
+header .header-container h1 {
+  text-transform: uppercase;
+  font-family: "font-title", sans-serif;
+  font-size: 75px;
+  letter-spacing: 10px;
+  line-height: 70px;
+}
+@media screen and (max-width: 670px) {
+  header .header-container h1 {
+    font-size: 45px;
+  }
+}
+header .header-container .img-container {
+  margin: 45px 0;
   height: 40px;
   width: 40px;
+}
+header .header-container .slogan {
+  text-transform: uppercase;
+  letter-spacing: 7px;
 }/*# sourceMappingURL=index.css.map */

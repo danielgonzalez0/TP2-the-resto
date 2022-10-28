@@ -4,6 +4,7 @@ header {
   color: $color1;
   padding: 0 10%;
 
+  //navbar
   nav {
     display: flex;
     justify-content: space-between;
@@ -46,11 +47,45 @@ header {
       @media screen and (max-width: 1100px) {
         flex: 0 0 120px;
       }
+      li:hover {
+          transform: scale(1.4);
+        }
     }
   }
-
-  .img-container {
-    height: 40px;
-    width: 40px;
+  //main part of the header
+  .header-container {
+    height: calc(100% - 200px);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 220px;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    span {
+      font-family: $font-3;
+      font-size: 60px;
+      color: $color3;
+      line-height: 40px;
+    }
+    h1 {
+      text-transform: uppercase;
+      font-family: $font-title;
+      font-size: 75px;
+      letter-spacing: 10px;
+      line-height: 70px;
+      @media screen and (max-width: 670px) {
+        font-size: 45px;
+      }
+    }
+    .img-container {
+      margin: 45px 0;
+      height: 40px;
+      width: 40px;
+    }
+    .slogan {
+      text-transform: uppercase;
+      letter-spacing: 7px;
+    }
   }
 }
