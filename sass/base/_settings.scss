@@ -9,6 +9,16 @@
 html {
   scroll-behavior: smooth;
 }
+body {
+  background: $color4;
+}
+
+span {
+  font-family: $font-3;
+  font-size: 40px;
+  color: $color3;
+  line-height: 25px;
+}
 
 a,
 a:visited {

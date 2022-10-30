@@ -1,0 +1,65 @@
+.store {
+  background: $color1;
+  min-height: 550px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  @media screen and (max-width: 800px) {
+    grid-template-columns: 1fr;
+  }
+
+  .store-description {
+    margin: 20px;
+    background: $color1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: dashed $color3 1px;
+
+    span {
+    }
+    h2 {
+      text-transform: uppercase;
+      font-family: $font-title;
+      line-height: 30px;
+    }
+    .img-container {
+      margin: 45px 0;
+      img {
+        width: 40px;
+        height: 40px;
+      }
+    }
+    p {
+      text-align: center;
+      margin: 0 20px;
+    }
+    .profil-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        margin: 25px 0 20px;
+        width: 80px;
+        height: 80px;
+        border-radius: 80px;
+      }
+      h3 {
+        font-weight: 900;
+      }
+      p {
+        text-transform: uppercase;
+        color: $color2;
+        font-weight: bold;
+      }
+    }
+  }
+  .store-bg-container {
+    background: url(../../img/store-01.jpg) center/cover;
+    @media screen and (max-width: 800px) {
+      display: none;
+    }
+  }
+}

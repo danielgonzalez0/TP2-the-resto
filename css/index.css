@@ -22,6 +22,17 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  background: rgb(33, 32, 30);
+}
+
+span {
+  font-family: "font-3", sans-serif;
+  font-size: 40px;
+  color: #b97c47;
+  line-height: 25px;
+}
+
 a,
 a:visited {
   color: rgb(238, 238, 238);
@@ -100,10 +111,7 @@ header .header-container {
   text-align: center;
 }
 header .header-container span {
-  font-family: "font-3", sans-serif;
   font-size: 60px;
-  color: rgb(165, 97, 68);
-  line-height: 40px;
 }
 header .header-container h1 {
   text-transform: uppercase;
@@ -125,4 +133,69 @@ header .header-container .img-container {
 header .header-container .slogan {
   text-transform: uppercase;
   letter-spacing: 7px;
+}
+
+.store {
+  background: rgb(238, 238, 238);
+  min-height: 550px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+@media screen and (max-width: 800px) {
+  .store {
+    grid-template-columns: 1fr;
+  }
+}
+.store .store-description {
+  margin: 20px;
+  background: rgb(238, 238, 238);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: dashed #b97c47 1px;
+}
+.store .store-description h2 {
+  text-transform: uppercase;
+  font-family: "font-title", sans-serif;
+  line-height: 30px;
+}
+.store .store-description .img-container {
+  margin: 45px 0;
+}
+.store .store-description .img-container img {
+  width: 40px;
+  height: 40px;
+}
+.store .store-description p {
+  text-align: center;
+  margin: 0 20px;
+}
+.store .store-description .profil-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.store .store-description .profil-container img {
+  margin: 25px 0 20px;
+  width: 80px;
+  height: 80px;
+  border-radius: 80px;
+}
+.store .store-description .profil-container h3 {
+  font-weight: 900;
+}
+.store .store-description .profil-container p {
+  text-transform: uppercase;
+  color: rgb(186, 186, 186);
+  font-weight: bold;
+}
+.store .store-bg-container {
+  background: url(../../img/store-01.jpg) center/cover;
+}
+@media screen and (max-width: 800px) {
+  .store .store-bg-container {
+    display: none;
+  }
 }/*# sourceMappingURL=index.css.map */

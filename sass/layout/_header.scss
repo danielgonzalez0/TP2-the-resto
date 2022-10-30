@@ -48,8 +48,8 @@ header {
         flex: 0 0 120px;
       }
       li:hover {
-          transform: scale(1.4);
-        }
+        transform: scale(1.4);
+      }
     }
   }
   //main part of the header
@@ -63,10 +63,7 @@ header {
     position: relative;
     text-align: center;
     span {
-      font-family: $font-3;
       font-size: 60px;
-      color: $color3;
-      line-height: 40px;
     }
     h1 {
       text-transform: uppercase;
