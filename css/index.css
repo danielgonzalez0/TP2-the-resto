@@ -1,14 +1,14 @@
 @font-face {
   font-family: "font-1";
-  src: url(../../fonts/Roboto/Roboto-Light.ttf);
+  src: url(../fonts/Roboto/Roboto-Light.ttf);
 }
 @font-face {
   font-family: "font-title";
-  src: url(../../fonts/Poppins/Poppins-Medium.ttf);
+  src: url(../fonts/Poppins/Poppins-Medium.ttf);
 }
 @font-face {
   font-family: "font-3";
-  src: url(../../fonts/Allura/Allura-Regular.ttf);
+  src: url(../fonts/Allura/Allura-Regular.ttf);
 }
 * {
   margin: 0;
@@ -46,7 +46,7 @@ img {
 
 header {
   height: 100vh;
-  background: url(../../img/bg-slider-06.jpg) center/cover;
+  background: url(../img/bg-slider-06.jpg) center/cover;
   color: rgb(245, 245, 245);
   padding: 0 10%;
 }
@@ -192,7 +192,7 @@ header .header-container .slogan {
   font-weight: bold;
 }
 .store .store-bg-container {
-  background: url(../../img/store-01.jpg) center/cover;
+  background: url(../img/store-01.jpg) center/cover;
 }
 @media screen and (max-width: 800px) {
   .store .store-bg-container {
@@ -201,7 +201,7 @@ header .header-container .slogan {
 }
 
 .bg-container {
-  background: url(../../img/bg-menu-01.jpg) no-repeat bottom;
+  background: url(../img/bg-menu-01.jpg) no-repeat bottom;
 }
 
 .menu {
