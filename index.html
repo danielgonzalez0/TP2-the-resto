@@ -14,7 +14,7 @@
   </head>
   <body>
     <header>
-      <!-- nav part -->
+      <!-- --------------------nav part----------------------- -->
       <nav>
         <div class="logo">
           <a href="#main">Resto</a>
@@ -39,7 +39,7 @@
             <a href="#"><i class="fa-brands fa-instagram"></i></a>
           </li>
         </ul>
-        <!-- header main part -->
+        <!-- ------------------header main part------------------------ -->
       </nav>
       <div class="header-container">
         <span>Welcome to</span>
@@ -51,7 +51,7 @@
       </div>
     </header>
     <main id="main">
-      <!-- section description & store -->
+      <!-- ---------------section description & store----------------- -->
       <section class="store" id="store">
         <article class="store-description">
           <span>Discover</span>
@@ -73,7 +73,7 @@
         </article>
         <div class="store-bg-container"></div>
       </section>
-      <!-- menu section -->
+      <!-- -----------------menu section--------------------- -->
       <div class="bg-container">
         <section class="menu" id="menu">
           <div class="menu-header">
@@ -157,6 +157,92 @@
           </div>
         </section>
       </div>
+      <!-- --------------- resevation section -------------------- -->
+      <section class="reservation">
+        <div class="infos">
+          <span>Time</span>
+          <h3>Open</h3>
+          <div class="img-container">
+            <img src="./img/ic-plate.png" alt="english description" />
+          </div>
+          <p class="p-title">Monday - Friday</p>
+          <p class="p-content">
+            7AM-11AM (Breakfast) <br />
+            11AM-10PM (Lunch/Dinner)
+          </p>
+          <p class="p-title">Saturday - Sunday</p>
+          <p class="p-content">
+            8AM-1PM (Brunch) <br />
+            1PM-9PM (Lunch/Dinner)
+          </p>
+          <p class="p-title">+ 15 890 979 25 52</p>
+        </div>
+        <!-- ------------ form section ------------- -->
+        <div class="form-container">
+          <div class="form-header">
+            <span>Reservation</span>
+            <h3>Online Booking</h3>
+            <div class="img-container">
+              <img src="./img/ic-plate.png" alt="english description" />
+            </div>
+          </div>
+
+          <form action="#" id="booking">
+            <div class="form-grid">
+              <div class="form-select">
+                <label for="people"></label>
+                <select name="people" id="people">
+                  <option value="">People</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                </select>
+              </div>
+
+              <div class="form-date">
+                <label for="date"></label>
+                <input type="date" name="date" id="date" value="2022-01-01" />
+              </div>
+              <div class="form-time">
+                <label for="time"></label>
+                <input
+                  type="time"
+                  name="time"
+                  id="time"
+                  min="07:00"
+                  max="22:00"
+                  required
+                />
+              </div>
+              <div class="form-name">
+                <label for="name"></label>
+                <input type="text" name="name" id="name" placeholder="Name" />
+              </div>
+              <div class="form-phone">
+                <label for="phone"></label>
+                <input type="tel" name="phone" id="phone" placeholder="Phone" />
+              </div>
+              <div class="form-email">
+                <label for="email"></label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Email"
+                />
+              </div>
+            </div>
+            <input type="submit" value="Book now">
+          </form>
+        </div>
+      </section>
     </main>
   </body>
 </html>

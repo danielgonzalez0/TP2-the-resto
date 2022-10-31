@@ -326,4 +326,13 @@ header .header-container .slogan {
   font-family: "font-1", sans-serif;
   font-weight: bold;
   font-size: 1.3rem;
+}
+
+.reservation .infos .img-container img {
+  width: 40px;
+  height: 40px;
+}
+.reservation .form-container .form-header .img-container img {
+  width: 40px;
+  height: 40px;
 }/*# sourceMappingURL=index.css.map */
