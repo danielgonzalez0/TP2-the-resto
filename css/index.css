@@ -471,4 +471,35 @@ header .header-container .slogan {
 }
 .reservation .form-container form .btn {
   margin: 60px auto;
+}
+
+.event {
+  display: flex;
+  flex-direction: column;
+  max-width: 1100px;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+  margin: 0 auto;
+}
+.event .event-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.event .event-header span {
+  line-height: 45px;
+}
+.event .event-header h3 {
+  font-family: "font-title", sans-serif;
+  text-transform: uppercase;
+  font-size: 2rem;
+  line-height: 30px;
+  color: rgb(245, 245, 245);
+}
+.event .event-header .img-container img {
+  width: 40px;
+  height: 40px;
+  margin: 40px 0;
 }/*# sourceMappingURL=index.css.map */
