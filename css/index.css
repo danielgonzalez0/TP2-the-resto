@@ -481,6 +481,11 @@ header .header-container .slogan {
   align-items: center;
   margin: 0 auto 40px;
 }
+@media screen and (max-width: 1000px) {
+  .event {
+    display: none;
+  }
+}
 .event .event-header {
   display: flex;
   flex-direction: column;
@@ -579,14 +584,16 @@ header .header-container .slogan {
   word-spacing: 5px;
 }
 .event a {
+  display: inline-block;
   text-transform: uppercase;
   color: black;
   letter-spacing: 4px;
   font-weight: 900;
-  transition: 0.3s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 .event a:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
+  color: #b97c47;
 }
 .event .event-content-section {
   background: rgb(245, 245, 245);

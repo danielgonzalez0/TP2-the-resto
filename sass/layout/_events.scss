@@ -6,6 +6,10 @@
   align-items: center;
   margin: 0 auto 40px;
 
+  @media screen and (max-width: 1000px) {
+    display: none;
+  }
+
   .event-header {
     display: flex;
     flex-direction: column;
@@ -116,14 +120,16 @@
     word-spacing: 5px;
   }
   a {
+    display: inline-block;
     text-transform: uppercase;
     color: $color5;
     letter-spacing: 4px;
     font-weight: 900;
-    transition: 0.3s ease-in-out;
+    transition: 0.2s ease-in-out;
 
     &:hover {
-      transform: scale(1.2);
+      transform: scale(1.1);
+      color: $color3;
     }
   }
 
