@@ -479,8 +479,7 @@ header .header-container .slogan {
   max-width: 1100px;
   justify-content: center;
   align-items: center;
-  background: #000;
-  margin: 0 auto;
+  margin: 0 auto 40px;
 }
 .event .event-header {
   display: flex;
@@ -502,4 +501,94 @@ header .header-container .slogan {
   width: 40px;
   height: 40px;
   margin: 40px 0;
+}
+.event .event-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 60% 1fr;
+  grid-template-rows: 230px 230px;
+  grid-template-areas: "a1 a3" "a2 a3";
+  gap: 20px;
+}
+.event .a1 {
+  grid-area: a1;
+}
+.event .a1 .date-section {
+  background: url(../../img/event-01.jpg) center/cover;
+}
+.event .a2 {
+  grid-area: a2;
+}
+.event .a2 .date-section {
+  background: url(../../img/event-02.jpg) center/cover;
+}
+.event .a3 {
+  grid-area: a3;
+  background: url(../../img/event-03.jpg) center/cover;
+}
+.event .event-left {
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+.event .event-container {
+  margin: 20px;
+  padding: 0 20px 20px;
+  background: rgb(245, 245, 245);
+  height: calc(100% - 40px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.event .event-container h4 {
+  padding: 40px 20px 0;
+}
+.event .event-container a {
+  padding-top: 60px;
+}
+.event .date-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.event .date-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  color: rgb(245, 245, 245);
+  background: rgb(33, 32, 30);
+}
+.event .date-container .date {
+  font-weight: 900;
+  font-size: 2rem;
+}
+.event .date-container .month {
+  font-size: 1.5rem;
+}
+.event h4 {
+  padding-top: 40px;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.event .location {
+  margin: 30px 0;
+  color: rgb(186, 186, 186);
+  word-spacing: 5px;
+}
+.event a {
+  text-transform: uppercase;
+  color: black;
+  letter-spacing: 4px;
+  font-weight: 900;
+  transition: 0.3s ease-in-out;
+}
+.event a:hover {
+  transform: scale(1.2);
+}
+.event .event-content-section {
+  background: rgb(245, 245, 245);
+  padding-left: 20px;
 }/*# sourceMappingURL=index.css.map */

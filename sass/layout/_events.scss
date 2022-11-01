@@ -4,8 +4,7 @@
   max-width: 1100px;
   justify-content: center;
   align-items: center;
-  background: #000;
-  margin: 0 auto;
+  margin: 0 auto 40px;
 
   .event-header {
     display: flex;
@@ -30,5 +29,106 @@
         margin: 40px 0;
       }
     }
+  }
+  .event-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 60% 1fr;
+    grid-template-rows: 230px 230px;
+    grid-template-areas:
+      'a1 a3'
+      'a2 a3';
+    gap: 20px;
+  }
+  .a1 {
+    grid-area: a1;
+    .date-section {
+      background: url(../../img/event-01.jpg) center/cover;
+    }
+  }
+  .a2 {
+    grid-area: a2;
+    .date-section {
+      background: url(../../img/event-02.jpg) center/cover;
+    }
+  }
+  .a3 {
+    grid-area: a3;
+    background: url(../../img/event-03.jpg) center/cover;
+  }
+
+  .event-left {
+    display: grid;
+    grid-template-columns: 40% 60%;
+  }
+
+  .event-container {
+    margin: 20px;
+    padding: 0 20px 20px;
+    background: $color1;
+    height: calc(100% - 40px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    h4 {
+      padding: 40px 20px 0;
+    }
+    a {
+      padding-top: 60px;
+    }
+  }
+
+  // ----- element feature ------
+
+  .date-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .date-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    color: $color1;
+    background: $color4;
+    .date {
+      font-weight: 900;
+      font-size: 2rem;
+    }
+    .month {
+      font-size: 1.5rem;
+    }
+  }
+
+  h4 {
+    padding-top: 40px;
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+  .location {
+    margin: 30px 0;
+    color: $color2;
+    word-spacing: 5px;
+  }
+  a {
+    text-transform: uppercase;
+    color: $color5;
+    letter-spacing: 4px;
+    font-weight: 900;
+    transition: 0.3s ease-in-out;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+
+  .event-content-section {
+    background: $color1;
+    padding-left: 20px;
   }
 }
