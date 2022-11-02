@@ -1,0 +1,80 @@
+footer {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  background: url(../../img/bg-footer.jpg) center / cover;
+  @media screen and (max-width: 900px) {
+    grid-template-columns: 1fr;
+    background: none;
+  }
+  .footer-infos {
+    padding: 50px 50px 50px 0;
+    justify-self: flex-end;
+    max-width: 550px;
+    color: $color2;
+    line-height: 40px;
+    font-size: 1.2rem;
+    @media screen and (max-width: 900px) {
+      display: none;
+    }
+  }
+  .footer-contact {
+    padding: 50px 0 50px 60px;
+      @media screen and (max-width: 900px) {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 50px 0;
+  }
+    .newsletter {
+      display: flex;
+      flex-direction: column;
+      label {
+        font-size: 1.1rem;
+        color: $color1;
+        text-transform: uppercase;
+        font-weight: bold;
+      }
+      input {
+        width: 300px;
+        border-bottom: none;
+        border: solid 1px rgb(80, 80, 80);
+        padding: 10px 0 10px 10px;
+        font-family: $font-1;
+        font-size: 1.1rem;
+        color: $color2;
+        margin: 20px 0;
+      }
+    }
+    .footer-icons {
+      padding-top: 40px;
+      display: flex;
+      gap: 20px;
+      p {
+        font-size: 1.1rem;
+        color: $color1;
+        text-transform: uppercase;
+        font-weight: bold;
+      }
+      ul {
+        display: flex;
+        gap: 40px;
+        font-size: 1.2rem;
+        color: $color1;
+        text-transform: uppercase;
+        font-weight: bold;
+        li {
+          a {
+            display: inline-block;
+            color: grey;
+            transition: 0.2s ease-in-out;
+            &:hover {
+              transform: scale(1.2);
+              color: $color2;
+            }
+          }
+        }
+      }
+    }
+  }
+}

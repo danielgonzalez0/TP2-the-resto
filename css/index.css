@@ -655,4 +655,89 @@ header .header-container .slogan {
 .blog-section .blog-container .blog-job {
   font-size: 1.4rem;
   color: #b97c47;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  background: url(../../img/bg-footer.jpg) center/cover;
+}
+@media screen and (max-width: 900px) {
+  footer {
+    grid-template-columns: 1fr;
+    background: none;
+  }
+}
+footer .footer-infos {
+  padding: 50px 50px 50px 0;
+  justify-self: flex-end;
+  max-width: 550px;
+  color: rgb(186, 186, 186);
+  line-height: 40px;
+  font-size: 1.2rem;
+}
+@media screen and (max-width: 900px) {
+  footer .footer-infos {
+    display: none;
+  }
+}
+footer .footer-contact {
+  padding: 50px 0 50px 60px;
+}
+@media screen and (max-width: 900px) {
+  footer .footer-contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+  }
+}
+footer .footer-contact .newsletter {
+  display: flex;
+  flex-direction: column;
+}
+footer .footer-contact .newsletter label {
+  font-size: 1.1rem;
+  color: rgb(245, 245, 245);
+  text-transform: uppercase;
+  font-weight: bold;
+}
+footer .footer-contact .newsletter input {
+  width: 300px;
+  border-bottom: none;
+  border: solid 1px rgb(80, 80, 80);
+  padding: 10px 0 10px 10px;
+  font-family: "font-1", sans-serif;
+  font-size: 1.1rem;
+  color: rgb(186, 186, 186);
+  margin: 20px 0;
+}
+footer .footer-contact .footer-icons {
+  padding-top: 40px;
+  display: flex;
+  gap: 20px;
+}
+footer .footer-contact .footer-icons p {
+  font-size: 1.1rem;
+  color: rgb(245, 245, 245);
+  text-transform: uppercase;
+  font-weight: bold;
+}
+footer .footer-contact .footer-icons ul {
+  display: flex;
+  gap: 40px;
+  font-size: 1.2rem;
+  color: rgb(245, 245, 245);
+  text-transform: uppercase;
+  font-weight: bold;
+}
+footer .footer-contact .footer-icons ul li a {
+  display: inline-block;
+  color: grey;
+  transition: 0.2s ease-in-out;
+}
+footer .footer-contact .footer-icons ul li a:hover {
+  transform: scale(1.2);
+  color: rgb(186, 186, 186);
 }/*# sourceMappingURL=index.css.map */
