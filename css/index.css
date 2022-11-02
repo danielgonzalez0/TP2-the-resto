@@ -519,17 +519,17 @@ header .header-container .slogan {
   grid-area: a1;
 }
 .event .a1 .date-section {
-  background: url(../../img/event-01.jpg) center/cover;
+  background: url(../img/event-01.jpg) center/cover;
 }
 .event .a2 {
   grid-area: a2;
 }
 .event .a2 .date-section {
-  background: url(../../img/event-02.jpg) center/cover;
+  background: url(../img/event-02.jpg) center/cover;
 }
 .event .a3 {
   grid-area: a3;
-  background: url(../../img/event-03.jpg) center/cover;
+  background: url(../img/event-03.jpg) center/cover;
 }
 .event .event-left {
   display: grid;
@@ -610,7 +610,7 @@ header .header-container .slogan {
 .blog-section .blog-bg {
   height: 400px;
   width: 100%;
-  background: url(../../img/gmap.jpg) no-repeat;
+  background: url(../img/gmap.jpg) no-repeat;
   background-size: cover;
   background-position: center;
 }
@@ -660,7 +660,7 @@ header .header-container .slogan {
 footer {
   display: grid;
   grid-template-columns: repeat(2, 50%);
-  background: url(../../img/bg-footer.jpg) center/cover;
+  background: url(../img/bg-footer.jpg) center/cover;
 }
 @media screen and (max-width: 900px) {
   footer {
