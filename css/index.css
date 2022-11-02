@@ -598,4 +598,61 @@ header .header-container .slogan {
 .event .event-content-section {
   background: rgb(245, 245, 245);
   padding-left: 20px;
+}
+
+.blog-section {
+  min-height: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+.blog-section .blog-bg {
+  height: 400px;
+  width: 100%;
+  background: url(../../img/gmap.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.blog-section .blog-container {
+  max-width: 1100px;
+  width: 90%;
+  padding: 70px 50px 50px;
+  background: rgb(245, 245, 245);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 100px;
+  z-index: 1;
+}
+.blog-section .blog-container img {
+  width: 70px;
+  height: 70px;
+  border-radius: 70px;
+  position: absolute;
+  top: -35px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.blog-section .blog-container .blog-message {
+  width: 85%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 1.2rem;
+  position: relative;
+}
+.blog-section .blog-container .blog-message i:first-child {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.blog-section .blog-container .blog-name {
+  margin: 40px 0 30px;
+  font-size: 2rem;
+}
+.blog-section .blog-container .blog-job {
+  font-size: 1.4rem;
+  color: #b97c47;
 }/*# sourceMappingURL=index.css.map */
